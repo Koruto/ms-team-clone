@@ -1,0 +1,72 @@
+.nav {
+    list-style-type: none;
+    font-size: 2rem;
+    display: grid;
+
+    grid-template-columns: 1fr repeat(5, max-content);
+    grid-column-gap: 2.3rem;
+
+    @media only screen and (max-width: 650px) {
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    //  box-shadow: 0 2px 5px #000;
+
+    transition: all 0.2s;
+    background-color: #9e86f466;
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: rgb(85, 26, 139);
+        padding: 2rem;
+        display: inline-block;
+        cursor: pointer;
+
+    }
+
+
+    &__link:hover {
+        background-color: rgba(#fff, 0.2);
+        color: black;
+        transform: translateY(1.5px);
+        margin-top: -1.5px;
+
+    }
+
+    &__link:active {
+        transform: translateY(0.01px);
+
+
+
+    }
+}
+
+
+
+
+@keyframes moveInTop {
+    0% {
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-2rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body class="bg-color">
+    <header class="header">
+      <nav>
+        <ul class="nav">
+          <li>
+            <a href="#" class="nav__link"><b>Meeting Platform</b></a>
+          </li>
+          <li><a href="../index.html" class="nav__link">Home</a></li>
+          <li><a href="meet.html" class="nav__link">Meet</a></li>
+          <li><a href="chat.html" class="nav__link">Chat</a></li>
+          <li><a href="feedback.html" class="nav__link">Feedback</a></li>
+          <li><a href="about.html " class="nav__link">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- creating join meeting interface -->
+
+    <div class="chat">
+      <div class="chat__join">
+        <p class="chat__text">Join Meeting</p>
+        <div class="chat__join--form">
+          <label for="meet-link">Enter link here:</label>
+          <input
+            type="text"
+            id="meet-link"
+            name="link-join"
+            placeholder="02a9-9naok-472hn-nsc3"
+          />
+        </div>
+        <div>
+          <button class="chat__join--btn" type="button" name="Join">
+            <a href="#" class="chat__join--text">Join</a>
+          </button>
+        </div>
+      </div>
+      <div class="chat__create">
+        <p class="chat__text">Create Meeting</p>
+        <div class="chat__create--flex">
+          <div>
+            <button
+              type="button"
+              name="Create"
+              id="create-meet"
+              class="chat__create--btn"
+            >
+              <a href="#" class="chat__create--text">Create Meet</a>
+            </button>
+          </div>
+          <div class="chat__create--img">
+            <img
+              class="chat__create--image"
+              src="../../public/img/circle.png"
+              alt="Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
